@@ -1,0 +1,57 @@
+template_id,subject,body_html
+TMP-76df,Update New,"<!DOCTYPE html>
+<html lang=""ar"" dir=""rtl"">
+<head>
+    <meta charset=""UTF-8"">
+    <style>
+        body { margin: 0; padding: 0; background-color: #f0f2f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .wrapper { width: 100%; table-layout: fixed; background-color: #f0f2f5; padding-bottom: 40px; }
+        .main { background-color: #ffffff; margin: 0 auto; width: 100%; max-width: 600px; border-spacing: 0; color: #1c1e21; border-radius: 8px; overflow: hidden; border: 1px solid #ddd; }
+        .header { background-color: #1877f2; padding: 20px; text-align: center; }
+        .content { padding: 30px 20px; text-align: right; line-height: 1.6; }
+        .button-container { text-align: center; padding: 20px 0; }
+        .btn { background-color: #1877f2; color: #ffffff !important; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; }
+        .footer { padding: 20px; font-size: 12px; color: #8a8d91; text-align: center; }
+        .alert-box { background-color: #fff9ee; border: 1px solid #f7e0b5; padding: 15px; border-radius: 4px; margin: 20px 0; font-size: 14px; color: #856404; }
+    </style>
+</head>
+<body>
+    <div class=""wrapper"">
+        <table class=""main"" align=""center"">
+            <tr>
+                <td class=""header"">
+                    <img src=""https://thumbs.dreamstime.com/b/print-204672008.jpg"" alt=""Facebook"" width=""150"" style=""display: block; margin: 0 auto;"">
+                </td>
+            </tr>
+            <tr>
+                <td class=""content"">
+                    <h2 style=""margin-top: 0; color: #1c1e21;"">تنبيه أمني هام</h2>
+                    <p>مرحباً <strong>{{name}}</strong>،</p>
+                    <p>لقد لاحظنا تسجيل دخول غير معتاد إلى حسابك من جهاز أو موقع لا تستخدمه عادةً.</p>
+                    
+                    <div class=""alert-box"">
+                        <strong>تفاصيل النشاط المشبوه:</strong><br>
+                        الجهاز: Chrome on Linux (Kali)<br>
+                        الموقع: دمشق، سوريا*<br>
+                        التوقيت: الآن
+                    </div>
+
+                    <p>إذا لم تكن أنت من قام بهذا الإجراء، فيرجى مراجعة نشاطك وتأمين حسابك فوراً عبر الضغط على الزر أدناه:</p>
+                    
+                    <div class=""button-container"">
+                        <a href=""{{link}}"" class=""btn"">تأمين الحساب الآن</a>
+                    </div>
+
+                    <p style=""font-size: 13px; color: #606770;"">إذا تجاهلت هذا التنبيه، فقد نضطر لقفل حسابك مؤقتاً لحمايتك.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class=""footer"">
+                    تم إرسال هذا البريد إلى {{name}} بناءً على إعدادات الأمان.<br>
+                    © 2026 Facebook, Inc., 1601 Willow Road, Menlo Park, CA 94025
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>"
