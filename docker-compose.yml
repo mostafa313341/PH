@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  phishing-app:
+    build: .
+    ports:
+      - "7777:7777"
+    volumes:
+      - ./data:/app/data  
+    environment:
+      - FLASK_ENV=development
+    restart: always
